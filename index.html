@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学マス評価計算機</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>学マス評価計算機</h1>
+  <div class="container">
+    <div class="input-area">
+      <table>
+        <tr>
+          <th>Vo</th>
+          <th>Da</th>
+          <th>Vi</th>
+          <th>ファン投票</th>
+        </tr>
+        <tr>
+          <td><input type="number" id="vo" placeholder="例: 1154"></td>
+          <td><input type="number" id="da" placeholder="例: 877"></td>
+          <td><input type="number" id="vi" placeholder="例: 1900"></td>
+          <td><input type="number" id="fans" placeholder="例: 90000"></td>
+        </tr>
+      </table>
+    </div>
+    <button onclick="calculate()">評価計算</button>
+    <div class="output-area">
+      <table>
+        <tr>
+          <th>評価値</th>
+          <th>プロデュース評価</th>
+        </tr>
+        <tr>
+          <td id="score">-</td>
+          <td id="rank">-</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
